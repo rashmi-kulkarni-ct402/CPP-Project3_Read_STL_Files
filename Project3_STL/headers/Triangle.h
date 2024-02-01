@@ -3,12 +3,12 @@
 
 namespace Shapes3D
 {
-    class Triangle1
+    class Triangle
     {
     public:
-        Triangle1();
-        Triangle1(Point3D p1, Point3D p2, Point3D p3);
-        ~Triangle1();
+        Triangle();
+        Triangle(Point3D p1, Point3D p2, Point3D p3);
+        ~Triangle();
 
         Point3D vertex1() const;
         Point3D vertex2() const;
