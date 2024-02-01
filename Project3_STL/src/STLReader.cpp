@@ -30,7 +30,7 @@ namespace Shapes3D
         if (readFromFile.is_open() || WriteToFile.is_open())
         {
             vector<Point3D> pointCoord;
-            vector<Shapes3D::Triangle1> triangleVertices;
+            vector<Shapes3D::Triangle> triangleVertices;
             string line;
 
             while (getline(readFromFile, line))
@@ -51,7 +51,7 @@ namespace Shapes3D
 
             for (size_t i = 0; i < pointCoord.size(); i = i + 3)
             {
-                Shapes3D::Triangle1 triangle(pointCoord[i], pointCoord[i + 1], pointCoord[i + 2]);
+                Shapes3D::Triangle triangle(pointCoord[i], pointCoord[i + 1], pointCoord[i + 2]);
                 triangleVertices.push_back(triangle);
             }
 
