@@ -1,13 +1,21 @@
-# CPP-Project3_Read_STL_Files
+# CPP-Project3 (Read STL Files)
 
-Instructions: 
-1. Change code from 2D to 3D
-2. STL file has triangle points
-3. STL file - Facet --> view - normal
-4. STL file - Vertex --> Point
-5. Read STL file till EOF and write in a text file
+This project focuses on reading 3D triangular mesh data from STL files and writing the extracted information into a text file. The program is designed to handle 3D data, where each triangle is defined by three vertices and a normal vector.
 
-Steps:
-1. Add a new variable for z-coordinates in Point class
-2. Write a function to extract data from STL file and write in a text file (vector to store points & triangles)
-3. Plot the 3D shapes in GNU Plot
+## Features
+
+- Read 3D triangular mesh data from STL files.
+- Extract vertices and normal vectors of each triangle.
+- Write the extracted data into a text file.
+- Plot the 3D shapes using GNU Plot.
+
+## Requirements
+
+- C++ compiler with C++11 support.
+- GNU Plot for visualizing the 3D shapes.
+
+## Steps
+
+1. Add a new variable for the z-coordinate in the `Point` class to represent 3D points.
+2. Write a function to extract data from the STL file and store it in a vector. This vector should contain objects representing the triangles.
+3. Use GNU Plot to plot the 3D shapes based on the extracted data.
